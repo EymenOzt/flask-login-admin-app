@@ -1,0 +1,8 @@
+<h2>Kayıt Ol</h2>
+<form method="post">
+  Kullanıcı adı: <input type="text" name="username" required><br>
+  Şifre: <input type="password" name="password" required><br>
+  <small>Şifre 3-21 karakter, en az 1 büyük ve 1 küçük harf olmalı.</small><br>
+  <input type="submit" value="Kayıt Ol">
+</form>
+<a href="{{ url_for('login') }}">Giriş Yap</a>
