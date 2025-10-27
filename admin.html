@@ -1,0 +1,12 @@
+<h1>Admin Paneli - Kayıtlı Kullanıcılar</h1>
+<table border="1" cellpadding="5">
+<tr><th>ID</th><th>Kullanıcı Adı</th></tr>
+{% for user in users %}
+<tr>
+  <td>{{ user[0] }}</td>
+  <td>{{ user[1] }}</td>
+</tr>
+{% endfor %}
+</table>
+<a href="{{ url_for('home') }}">Ana Sayfa</a>
+<a href="{{ url_for('logout') }}">Çıkış Yap</a>
