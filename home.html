@@ -1,0 +1,5 @@
+<h1>Hoşgeldiniz, {{ user }}!</h1>
+<a href="{{ url_for('logout') }}">Çıkış Yap</a>
+{% if user == "admin" %}
+  <br><a href="{{ url_for('admin_panel') }}">Admin Paneli</a>
+{% endif %}
