@@ -1,6 +1,6 @@
-<h1>Admin Paneli - Kayıtlı Kullanıcılar</h1>
+<h1>Admin Panel - Registered Users</h1>
 <table border="1" cellpadding="5">
-<tr><th>ID</th><th>Kullanıcı Adı</th></tr>
+<tr><th>ID</th><th>Username</th></tr>
 {% for user in users %}
 <tr>
   <td>{{ user[0] }}</td>
@@ -8,5 +8,5 @@
 </tr>
 {% endfor %}
 </table>
-<a href="{{ url_for('home') }}">Ana Sayfa</a>
-<a href="{{ url_for('logout') }}">Çıkış Yap</a>
+<a href="{{ url_for('home') }}">Home Page</a>
+<a href="{{ url_for('logout') }}">Exit</a>
