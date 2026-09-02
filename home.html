@@ -1,5 +1,0 @@
-<h1>Welcome, {{ user }}!</h1>
-<a href="{{ url_for('logout') }}">Exit</a>
-{% if user == "admin" %}
-  <br><a href="{{ url_for('admin_panel') }}">Admin Panel</a>
-{% endif %}
