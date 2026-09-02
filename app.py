@@ -46,10 +46,15 @@ def validate_password(password):
     if len(password) < 3 or len(password) > 21:
         return False, "Password must be between 3-21 characters."
     if not re.search(r"[A-Z]", password):
-        return False, "Password must contain at least 1 capital letter
+        return False, "Password must contain at least 1 capital letter."
     if not re.search(r"[a-z]", password):
         return False, "Password must contain at least 1 lowercase letter."
     return True, ""
+
+# ------------------- Ana Sayfa -------------------
+@app.route("/")
+def index():
+    return redirect(url_for("login"))
 
 # ------------------- Register -------------------
 @app.route("/register", methods=["GET", "POST"])
