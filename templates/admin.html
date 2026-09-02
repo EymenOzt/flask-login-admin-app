@@ -1,0 +1,12 @@
+<h1>Admin Panel - Registered Users</h1>
+<table border="1" cellpadding="5">
+<tr><th>ID</th><th>Username</th></tr>
+{% for user in users %}
+<tr>
+  <td>{{ user[0] }}</td>
+  <td>{{ user[1] }}</td>
+</tr>
+{% endfor %}
+</table>
+<a href="{{ url_for('home') }}">Home Page</a>
+<a href="{{ url_for('logout') }}">Exit</a>
