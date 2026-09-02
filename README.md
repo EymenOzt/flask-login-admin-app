@@ -1,0 +1,1 @@
+Admin Panel Username:admin Password:admin123 TR Şifreyi ve Kullanıcı adını değişebilirsiniz,app.py admin oluştur kısmında değişebilir. EN You can change the password and username, they can be changed in the app.py create admin section.
